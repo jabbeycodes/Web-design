@@ -228,7 +228,7 @@ export default function HomePage() {
             {
               name: "Starter",
               who: "Founders who need to launch fast",
-              price: "$900",
+              price: "$600 – $900",
               features: [
                 "1 custom landing page (up to 8 sections)",
                 "Mobile + desktop responsive",
@@ -243,7 +243,7 @@ export default function HomePage() {
             {
               name: "Growth",
               who: "Startups validating a new product",
-              price: "$2,500",
+              price: "$2,500 – $4,500",
               features: [
                 "Everything in Starter, plus:",
                 "Multi-page site (up to 5 pages)",
@@ -259,7 +259,7 @@ export default function HomePage() {
             {
               name: "Scale",
               who: "Teams ready to convert at volume",
-              price: "$5,000",
+              price: "$4,500 – $7,500",
               features: [
                 "Everything in Growth, plus:",
                 "Unlimited pages",
@@ -275,7 +275,7 @@ export default function HomePage() {
             {
               name: "Enterprise",
               who: "Custom scope, dedicated team",
-              price: "Custom",
+              price: "$7,500+",
               features: [
                 "Full-stack SaaS application",
                 "Custom design system",
@@ -383,7 +383,7 @@ export default function HomePage() {
           <p className="text-amber-500 text-sm font-semibold tracking-widest uppercase mb-4">READY TO LAUNCH?</p>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Let's build something that converts.</h2>
           <p className="text-neutral-400 text-lg max-w-2xl mx-auto mb-8">
-            Book a free 30-minute strategy call. We'll audit your current site, map out a plan, and give you a fixed-price quote — no obligations.
+            Book a free 30-minute strategy call. We'll audit your current site, map out a plan, and give you a clear price range — no surprises, no obligations.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="mailto:info@shwme.app" className="glow-btn px-8 py-4 rounded-full text-black font-bold inline-flex items-center gap-2">
