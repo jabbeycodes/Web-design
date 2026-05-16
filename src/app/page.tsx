@@ -23,7 +23,7 @@ export default function HomePage() {
   }, []);
 
   return (
-    <main className="relative min-h-screen bg-[#0a0a0a] text-white overflow-x-hidden">
+    <main className="relative min-h-screen overflow-x-hidden" style={{ background: 'var(--bg)', color: 'var(--text)' }}>
       {/* Ambient orbs */}
       <div className="fixed inset-0 z-0 pointer-events-none">
         <div
@@ -50,15 +50,15 @@ export default function HomePage() {
       </div>
 
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 px-6 py-4 flex items-center justify-between bg-[#0a0a0a]/80 backdrop-blur-md border-b border-white/[0.06]">
-        <Link href="/" className="text-xl font-bold tracking-tight text-white">
+      <nav className="fixed top-0 left-0 right-0 z-50 px-6 py-4 flex items-center justify-between backdrop-blur-md border-b" style={{ background: 'var(--nav-bg)', borderColor: 'var(--border)' }}>
+        <Link href="/" className="text-xl font-bold tracking-tight" style={{ color: 'var(--text)' }}>
           ShowMe<span className="text-amber-500"> Sites</span>
         </Link>
         <div className="hidden md:flex items-center gap-8">
-          <a href="#work" className="text-sm text-neutral-400 hover:text-white transition-colors">Work</a>
-          <a href="#process" className="text-sm text-neutral-400 hover:text-white transition-colors">Process</a>
-          <a href="#pricing" className="text-sm text-neutral-400 hover:text-white transition-colors">Pricing</a>
-          <a href="#about" className="text-sm text-neutral-400 hover:text-white transition-colors">About</a>
+          <a href="#work" className="text-sm transition-colors" style={{ color: 'var(--text-muted)' }}>Work</a>
+          <a href="#process" className="text-sm transition-colors" style={{ color: 'var(--text-muted)' }}>Process</a>
+          <a href="#pricing" className="text-sm transition-colors" style={{ color: 'var(--text-muted)' }}>Pricing</a>
+          <a href="#about" className="text-sm transition-colors" style={{ color: 'var(--text-muted)' }}>About</a>
         </div>
         <div className="flex items-center gap-3">
           <ThemeToggle />
@@ -82,8 +82,8 @@ export default function HomePage() {
             <span className="text-amber-500">We just build it fast.</span>
           </h1>
           <p
-            className="text-lg sm:text-xl text-neutral-400 max-w-2xl leading-relaxed mb-10 animate-slide-up"
-            style={{ animationDelay: "0.2s" }}
+            className="text-lg sm:text-xl max-w-2xl leading-relaxed mb-10 animate-slide-up"
+            style={{ animationDelay: "0.2s", color: 'var(--text-muted)' }}
           >
             High-converting landing pages, marketing sites, and full-stack apps for founders
             who want to ship this month — not next quarter.
@@ -95,7 +95,7 @@ export default function HomePage() {
                 <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
               </svg>
             </a>
-            <a href="#work" className="px-8 py-4 rounded-full border border-white/20 text-white font-semibold text-base hover:bg-white/5 transition-colors">
+            <a href="#work" className="px-8 py-4 rounded-full font-semibold text-base transition-colors" style={{ border: '1px solid var(--border-medium)', color: 'var(--text)' }}>
               See our work
             </a>
           </div>
@@ -154,7 +154,7 @@ export default function HomePage() {
             >
               <div className="text-3xl mb-4">{item.icon}</div>
               <h3 className="text-lg font-bold mb-2">{item.title}</h3>
-              <p className="text-neutral-400 text-sm leading-relaxed mb-4">{item.desc}</p>
+              <p className="text-sm leading-relaxed mb-4" style={{ color: 'var(--text-muted)' }}>{item.desc}</p>
               <div className="bg-amber-500/10 border border-amber-500/20 rounded-xl px-4 py-3">
                 <p className="text-amber-400 text-sm font-medium">✓ {item.solution}</p>
               </div>
@@ -185,7 +185,7 @@ export default function HomePage() {
             >
               <div className="text-3xl mb-4">{s.icon}</div>
               <h3 className="text-xl font-bold mb-2 group-hover:text-amber-500 transition-colors">{s.title}</h3>
-              <p className="text-neutral-400 text-sm leading-relaxed">{s.desc}</p>
+              <p className="text-sm leading-relaxed" style={{ color: 'var(--text-muted)' }}>{s.desc}</p>
             </div>
           ))}
         </div>
@@ -215,7 +215,7 @@ export default function HomePage() {
             >
               <div className="text-2xl mb-3">{item.icon}</div>
               <h4 className="font-bold text-base mb-2">{item.title}</h4>
-              <p className="text-neutral-400 text-sm leading-relaxed">{item.desc}</p>
+              <p className="text-sm leading-relaxed" style={{ color: 'var(--text-muted)' }}>{item.desc}</p>
             </div>
           ))}
         </div>
@@ -226,7 +226,7 @@ export default function HomePage() {
         <div className="text-center mb-16 reveal">
           <p className="text-amber-500 text-sm font-semibold tracking-widest uppercase mb-3">OUR WORK</p>
           <h2 className="text-4xl sm:text-5xl font-bold tracking-tight">Projects we've shipped.</h2>
-          <p className="text-neutral-400 mt-4 max-w-2xl mx-auto">Real products for real founders. From community platforms to marketing sites.</p>
+          <p className="mt-4 max-w-2xl mx-auto" style={{ color: 'var(--text-muted)' }}>Real products for real founders. From community platforms to marketing sites.</p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {[
@@ -344,15 +344,15 @@ export default function HomePage() {
                   MOST POPULAR
                 </div>
               )}
-              <p className="text-xs text-neutral-500 mb-2">{tier.who}</p>
+              <p className="text-xs mb-2" style={{ color: 'var(--text-muted)' }}>{tier.who}</p>
               <h3 className="text-xl font-bold mb-1">{tier.name}</h3>
               <div className="flex items-baseline gap-1 mb-5">
                 <span className="text-3xl font-extrabold text-amber-500">{tier.price}</span>
-                {tier.price !== "Custom" && <span className="text-neutral-500 text-sm"> / project</span>}
+                {tier.price !== "Custom" && <span className="text-sm" style={{ color: 'var(--text-muted)' }}> / project</span>}
               </div>
               <ul className="space-y-2.5 mb-5">
                 {tier.features.map((f, j) => (
-                  <li key={j} className="text-sm text-neutral-300 flex items-start gap-2">
+                  <li key={j} className="text-sm flex items-start gap-2" style={{ color: 'var(--text)' }}>
                     <svg width="16" height="16" viewBox="0 0 16 16" className="mt-0.5 text-amber-500 shrink-0" fill="none">
                       <path d="M2 8l4 4 8-8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
                     </svg>
@@ -362,11 +362,11 @@ export default function HomePage() {
               </ul>
               {tier.notIncluded.length > 0 && (
                 <div className="mb-5">
-                  <p className="text-xs text-neutral-500 mb-2">Not included:</p>
+                  <p className="text-xs mb-2" style={{ color: 'var(--text-muted)' }}>Not included:</p>
                   <ul className="space-y-1">
                     {tier.notIncluded.map((ni, j) => (
-                      <li key={j} className="text-sm text-neutral-500 flex items-start gap-2">
-                        <svg width="16" height="16" viewBox="0 0 16 16" className="mt-0.5 text-neutral-600 shrink-0" fill="none">
+                      <li key={j} className="text-sm flex items-start gap-2" style={{ color: 'var(--text-muted)' }}>
+                        <svg width="16" height="16" viewBox="0 0 16 16" className="mt-0.5 shrink-0" style={{ color: 'var(--text-subtle)' }} fill="none">
                           <path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
                         </svg>
                         {ni}
@@ -380,8 +380,9 @@ export default function HomePage() {
                 className={`block text-center w-full py-3 rounded-xl font-semibold transition-colors ${
                   tier.popular
                     ? "bg-amber-500 text-black hover:bg-amber-400"
-                    : "border border-white/20 hover:bg-white/5"
+                    : "border"
                 }`}
+                style={tier.popular ? {} : { borderColor: 'var(--border-medium)' }}
               >
                 {tier.price === "Custom" ? "Contact Us" : "Get Started"}
               </a>
@@ -397,7 +398,7 @@ export default function HomePage() {
             </svg>
             <div>
               <p className="text-2xl font-bold text-amber-500">100% fixed price</p>
-              <p className="text-sm text-neutral-400">No hourly surprises. Quote upfront, pay once.</p>
+              <p className="text-sm" style={{ color: 'var(--text-muted)' }}>No hourly surprises. Quote upfront, pay once.</p>
             </div>
           </div>
           <div className="flex items-center gap-4">
@@ -406,7 +407,7 @@ export default function HomePage() {
             </svg>
             <div>
               <p className="text-2xl font-bold text-amber-500">50% upfront</p>
-              <p className="text-sm text-neutral-400">Start with 50%, pay the rest at delivery.</p>
+              <p className="text-sm" style={{ color: 'var(--text-muted)' }}>Start with 50%, pay the rest at delivery.</p>
             </div>
           </div>
           <div className="flex items-center gap-4">
@@ -415,7 +416,7 @@ export default function HomePage() {
             </svg>
             <div>
               <p className="text-2xl font-bold text-amber-500">Direct builder</p>
-              <p className="text-sm text-neutral-400">Talk to the person building it. No middlemen.</p>
+              <p className="text-sm" style={{ color: 'var(--text-muted)' }}>Talk to the person building it. No middlemen.</p>
             </div>
           </div>
         </div>
@@ -426,7 +427,7 @@ export default function HomePage() {
         <div className="glass-card rounded-3xl p-8 md:p-16 text-center reveal">
           <p className="text-amber-500 text-sm font-semibold tracking-widest uppercase mb-4">READY TO LAUNCH?</p>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Let's build something that converts.</h2>
-          <p className="text-neutral-400 text-lg max-w-2xl mx-auto mb-8">
+          <p className="text-lg max-w-2xl mx-auto mb-8" style={{ color: 'var(--text-muted)' }}>
             Book a free 30-minute strategy call. We'll audit your current site, map out a plan, and give you a clear price range — no surprises, no obligations.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -436,7 +437,7 @@ export default function HomePage() {
                 <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
               </svg>
             </a>
-            <a href="mailto:info@shwme.app" className="px-8 py-4 rounded-full border border-white/20 text-white font-semibold hover:bg-white/5 transition-colors">
+            <a href="mailto:info@shwme.app" className="px-8 py-4 rounded-full font-semibold transition-colors" style={{ border: '1px solid var(--border-medium)', color: 'var(--text)' }}>
               info@shwme.app
             </a>
           </div>
@@ -444,18 +445,18 @@ export default function HomePage() {
       </section>
 
       {/* Footer */}
-      <footer className="relative z-10 border-t border-white/[0.06] px-6 py-12">
+      <footer className="relative z-10 border-t px-6 py-12" style={{ borderColor: 'var(--footer-border)' }}>
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
-          <Link href="/" className="text-lg font-bold tracking-tight text-white">
+          <Link href="/" className="text-lg font-bold tracking-tight" style={{ color: 'var(--text)' }}>
             ShowMe<span className="text-amber-500"> Sites</span>
           </Link>
           <div className="flex items-center gap-6">
-            <a href="#work" className="text-sm text-neutral-500 hover:text-white transition-colors">Work</a>
-            <a href="#pricing" className="text-sm text-neutral-500 hover:text-white transition-colors">Pricing</a>
-            <a href="#about" className="text-sm text-neutral-500 hover:text-white transition-colors">About</a>
-            <a href="mailto:info@shwme.app" className="text-sm text-neutral-500 hover:text-white transition-colors">info@shwme.app</a>
+            <a href="#work" className="text-sm transition-colors" style={{ color: 'var(--text-subtle)' }}>Work</a>
+            <a href="#pricing" className="text-sm transition-colors" style={{ color: 'var(--text-subtle)' }}>Pricing</a>
+            <a href="#about" className="text-sm transition-colors" style={{ color: 'var(--text-subtle)' }}>About</a>
+            <a href="mailto:info@shwme.app" className="text-sm transition-colors" style={{ color: 'var(--text-subtle)' }}>info@shwme.app</a>
           </div>
-          <p className="text-xs text-neutral-500">© 2026 ShowMe Sites. All rights reserved.</p>
+          <p className="text-xs" style={{ color: 'var(--text-subtle)' }}>© 2026 ShowMe Sites. All rights reserved.</p>
         </div>
       </footer>
     </main>
