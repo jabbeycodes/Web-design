@@ -217,6 +217,45 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Portfolio */}
+      <section id="portfolio" className="relative z-10 px-6 py-24 max-w-7xl mx-auto">
+        <div className="text-center mb-16 reveal">
+          <p className="text-amber-500 text-sm font-semibold tracking-widest uppercase mb-3">OUR WORK</p>
+          <h2 className="text-4xl sm:text-5xl font-bold tracking-tight">Projects we've shipped.</h2>
+          <p className="text-neutral-400 mt-4 max-w-2xl mx-auto">Real products for real founders. From community platforms to marketing sites.</p>
+        </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+          {[
+            { img: "/images/portfolio-1.jpg", title: "Fintech Dashboard", desc: "SaaS analytics platform" },
+            { img: "/images/portfolio-2.jpg", title: "E-commerce Store", desc: "Shopify headless storefront" },
+            { img: "/images/portfolio-3.jpg", title: "Community App", desc: "Social + events platform" },
+            { img: "/images/portfolio-4.jpg", title: "Marketing Site", desc: "B2B lead generation" },
+            { img: "/images/portfolio-5.jpg", title: "Brand Identity", desc: "Visual system + guidelines" },
+            { img: "/images/mockup-laptop.jpg", title: "SaaS MVP", desc: "Full-stack auth + payments" },
+          ].map((project, i) => (
+            <div
+              key={i}
+              className="glass-card rounded-2xl overflow-hidden reveal group"
+              style={{ transitionDelay: `${i * 75}ms` }}
+            >
+              <div className="relative aspect-[16/10] overflow-hidden">
+                <Image
+                  src={project.img}
+                  alt={project.title}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-5">
+                  <h3 className="text-lg font-bold text-white">{project.title}</h3>
+                  <p className="text-sm text-neutral-400">{project.desc}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* Pricing */}
       <section id="pricing" className="relative z-10 px-6 py-24 max-w-7xl mx-auto">
         <div className="text-center mb-16 reveal">
