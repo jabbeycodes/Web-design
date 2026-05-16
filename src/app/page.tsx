@@ -232,6 +232,7 @@ export default function HomePage() {
             { img: "/images/portfolio-4.jpg", title: "SaaS Marketing Site", desc: "B2B lead generation" },
             { img: "/images/portfolio-5.jpg", title: "Brand Identity", desc: "Visual system + guidelines" },
             { img: "/images/portfolio-6.jpg", title: "Mobile App UI", desc: "Flutter + native design" },
+            { img: "/images/portfolio-7.jpg", title: "Enterprise Portal", desc: "Custom admin dashboard" },
           ].map((project, i) => (
             <div
               key={i}
