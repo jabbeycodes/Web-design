@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import ThemeToggle from "@/components/ThemeToggle";
 
 export default function HomePage() {
   useEffect(() => {
@@ -59,9 +60,12 @@ export default function HomePage() {
           <a href="#pricing" className="text-sm text-neutral-400 hover:text-white transition-colors">Pricing</a>
           <a href="#about" className="text-sm text-neutral-400 hover:text-white transition-colors">About</a>
         </div>
-        <a href="#contact" className="px-5 py-2 rounded-full text-sm font-semibold bg-amber-500 text-black hover:bg-amber-400 transition-colors">
-          Start a project
-        </a>
+        <div className="flex items-center gap-3">
+          <ThemeToggle />
+          <a href="#contact" className="px-5 py-2 rounded-full text-sm font-semibold bg-amber-500 text-black hover:bg-amber-400 transition-colors">
+            Start a project
+          </a>
+        </div>
       </nav>
 
       {/* Hero */}
@@ -407,11 +411,11 @@ export default function HomePage() {
           </div>
           <div className="flex items-center gap-4">
             <svg className="w-10 h-10 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
             </svg>
             <div>
-              <p className="text-2xl font-bold text-amber-500">24h refund</p>
-              <p className="text-sm text-neutral-400">Not happy within 24h? Full refund, no questions.</p>
+              <p className="text-2xl font-bold text-amber-500">Direct builder</p>
+              <p className="text-sm text-neutral-400">Talk to the person building it. No middlemen.</p>
             </div>
           </div>
         </div>
