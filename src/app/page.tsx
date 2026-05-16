@@ -226,12 +226,12 @@ export default function HomePage() {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {[
-            { img: "/images/portfolio-1.jpg", title: "Fintech Dashboard", desc: "SaaS analytics platform" },
-            { img: "/images/portfolio-2.jpg", title: "E-commerce Store", desc: "Shopify headless storefront" },
-            { img: "/images/portfolio-3.jpg", title: "Community App", desc: "Social + events platform" },
-            { img: "/images/portfolio-4.jpg", title: "Marketing Site", desc: "B2B lead generation" },
+            { img: "/images/portfolio-1.jpg", title: "Fintech Dashboard", desc: "Real-time analytics platform" },
+            { img: "/images/portfolio-2.jpg", title: "E-commerce Store", desc: "Headless Shopify storefront" },
+            { img: "/images/portfolio-3.jpg", title: "Community Platform", desc: "Events + social feed" },
+            { img: "/images/portfolio-4.jpg", title: "SaaS Marketing Site", desc: "B2B lead generation" },
             { img: "/images/portfolio-5.jpg", title: "Brand Identity", desc: "Visual system + guidelines" },
-            { img: "/images/mockup-laptop.jpg", title: "SaaS MVP", desc: "Full-stack auth + payments" },
+            { img: "/images/portfolio-6.jpg", title: "Mobile App UI", desc: "Flutter + native design" },
           ].map((project, i) => (
             <div
               key={i}
