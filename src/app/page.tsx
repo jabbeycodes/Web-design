@@ -52,7 +52,7 @@ export default function HomePage() {
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 px-6 py-4 flex items-center justify-between backdrop-blur-md border-b" style={{ background: 'var(--nav-bg)', borderColor: 'var(--border)' }}>
         <Link href="/" className="text-xl font-bold tracking-tight" style={{ color: 'var(--text)' }}>
-          ShowMe<span className="text-amber-500"> Sites</span>
+          showme<span className="text-amber-500">.sites</span>
         </Link>
         <div className="hidden md:flex items-center gap-8">
           <a href="#work" className="text-sm transition-colors" style={{ color: 'var(--text-muted)' }}>Work</a>
@@ -104,7 +104,7 @@ export default function HomePage() {
           <div className="glass-card rounded-2xl overflow-hidden p-2">
             <Image
               src="/images/mockup-laptop.jpg"
-              alt="ShowMe Sites portfolio showcase"
+              alt="showme.sites portfolio showcase"
               width={1200}
               height={675}
               className="rounded-xl w-full h-auto"
@@ -448,7 +448,7 @@ export default function HomePage() {
       <footer className="relative z-10 border-t px-6 py-12" style={{ borderColor: 'var(--footer-border)' }}>
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
           <Link href="/" className="text-lg font-bold tracking-tight" style={{ color: 'var(--text)' }}>
-            ShowMe<span className="text-amber-500"> Sites</span>
+            showme<span className="text-amber-500">.sites</span>
           </Link>
           <div className="flex items-center gap-6">
             <a href="#work" className="text-sm transition-colors" style={{ color: 'var(--text-subtle)' }}>Work</a>
@@ -456,7 +456,7 @@ export default function HomePage() {
             <a href="#about" className="text-sm transition-colors" style={{ color: 'var(--text-subtle)' }}>About</a>
             <a href="mailto:info@shwme.app" className="text-sm transition-colors" style={{ color: 'var(--text-subtle)' }}>info@shwme.app</a>
           </div>
-          <p className="text-xs" style={{ color: 'var(--text-subtle)' }}>© 2026 ShowMe Sites. All rights reserved.</p>
+          <p className="text-xs" style={{ color: 'var(--text-subtle)' }}>© 2026 showme.sites. All rights reserved.</p>
         </div>
       </footer>
     </main>
