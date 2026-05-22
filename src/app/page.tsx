@@ -108,11 +108,8 @@ export default function HomePage() {
 
       {/* Navigation */}
       <motion.nav
-        style={{ opacity: navOpacity }}
         className="fixed top-0 left-0 right-0 z-50 px-6 py-4 flex items-center justify-between backdrop-blur-md border-b"
-        style={[
-          { background: "var(--nav-bg)", borderColor: "var(--border)" },
-        ] as any}
+        style={{ opacity: navOpacity, background: "var(--nav-bg)", borderColor: "var(--border)" }}
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
