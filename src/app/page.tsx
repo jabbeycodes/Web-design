@@ -8,7 +8,7 @@ import ThemeToggle from "@/components/ThemeToggle";
 // Animation variants
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" as const } },
 };
 
 const staggerContainer = {
@@ -22,36 +22,6 @@ const staggerContainer = {
 const scaleIn = {
   hidden: { opacity: 0, scale: 0.95 },
   visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
-};
-
-const slideInLeft = {
-  hidden: { opacity: 0, x: -40 },
-  visible: { opacity: 1, x: 0, transition: { duration: 0.6 } },
-};
-
-const slideInRight = {
-  hidden: { opacity: 0, x: 40 },
-  visible: { opacity: 1, x: 0, transition: { duration: 0.6 } },
-};
-
-const heroText = {
-  hidden: { opacity: 0, y: 20 },
-  visible: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.5, delay: i * 0.1 },
-  }),
-};
-
-const glowPulse = {
-  animate: {
-    boxShadow: [
-      "0 0 20px rgba(245,158,11,0.3)",
-      "0 0 40px rgba(245,158,11,0.5)",
-      "0 0 20px rgba(245,158,11,0.3)",
-    ],
-    transition: { duration: 2, repeat: Infinity, ease: "easeInOut" },
-  },
 };
 
 export default function HomePage() {
