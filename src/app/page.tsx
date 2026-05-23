@@ -134,7 +134,7 @@ export default function HomePage() {
             </motion.a>
           </motion.div>
 
-          <{/* Stats */}
+          {/* Stats */}
           <motion.div className="mt-16 flex flex-wrap gap-12" variants={staggerContainer} initial="hidden" animate="visible"
           >
             {[
