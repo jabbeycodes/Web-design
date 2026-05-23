@@ -254,9 +254,13 @@ export default function HomePage() {
           {portfolio.map((project, i) => (
             <motion.div key={i} variants={fadeInUp} className="rounded-2xl overflow-hidden group" style={{ background: "var(--surface)", border: "1px solid var(--border)" }}
             >
-              <div className="aspect-video relative flex items-center justify-center text-4xl" style={{ background: "linear-gradient(135deg, #1a1a1a, #0f0f0f)" }}
-              >
-                📱
+              <div className="aspect-video relative overflow-hidden">
+                <Image
+                  src={`/images/portfolio-${i + 1}.jpg`}
+                  alt={project.title}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
               </div>
               <div className="p-5">
                 <div className="flex gap-2 mb-2">

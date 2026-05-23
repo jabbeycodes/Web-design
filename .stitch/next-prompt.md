@@ -1,8 +1,8 @@
 ---
-page: index
+page: about
 ---
 
-Polish and improve the existing showme.sites landing page (index). Focus on:
+Create an About page for showme.sites. This is the next page in the site roadmap.
 
 **DESIGN SYSTEM (REQUIRED):**
 - Background: #0a0a0a, Surface: #121212
@@ -12,31 +12,25 @@ Polish and improve the existing showme.sites landing page (index). Focus on:
 - Gradients: subtle radial (amber + cyan) at low opacity
 - Animations: fade-in-up, stagger 0.08s
 
-**Improvements Needed:**
-1. **Hero section** — Add a real headline image or mockup, make the value prop clearer
-2. **Services** — Replace emoji icons with proper Lucide icons (or SVG)
-3. **Process** — Add visual step connectors (arrows/lines between steps)
-4. **Portfolio** — Add real project screenshots (use placeholder if needed)
-5. **Social proof** — Add a testimonials section (even if placeholder)
-6. **Mobile** — Ensure all grids collapse properly on mobile
-7. **Footer** — Add more links (social, legal, resources)
-
 **Page Structure:**
-1. Navigation (fixed, blur)
-2. Hero with headline + CTA + stats
-3. Logo/trust bar (client logos or tech stack)
-4. Problem/Solution cards
-5. Services grid (6 items)
-6. Process steps (4 steps, connected)
-7. Portfolio showcase (4 projects)
-8. Testimonials (2-3 quotes)
-9. Pricing cards (3 tiers)
-10. FAQ accordion (4-5 questions)
-11. CTA banner
-12. Footer with links
+1. Navigation (same as index)
+2. Hero — "About showme.sites" with mission statement
+3. Story section — How ShowMe started, why we do this
+4. Team section — Founder (Josh) + key team members with photos
+5. Values section — 4-5 core values in cards
+6. Tech stack showcase — What we build with
+7. CTA — Same as index (Book a call)
+8. Footer (same as index)
+
+**Content Notes:**
+- ShowMe started in 2025 as a skill marketplace for Africa
+- Now expanded to web development services
+- Mission: Help founders ship fast, own their code
+- Values: Speed, transparency, ownership, quality
+- Team: Josh (founder), + mention looking for collaborators
 
 **Critical:**
-- Keep it clean — no excessive animations
-- Ensure all text has proper contrast
-- All CTAs should link to #contact or mailto:info@shwme.app
-- Mobile-first responsive design
+- Keep same nav/footer as index
+- Use Lucide icons (not emojis)
+- Ensure mobile responsive
+- Link back to home with "/"
