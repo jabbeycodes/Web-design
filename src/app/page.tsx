@@ -255,12 +255,11 @@ export default function HomePage() {
             <motion.div key={i} variants={fadeInUp} className="rounded-2xl overflow-hidden group" style={{ background: "var(--surface)", border: "1px solid var(--border)" }}
             >
               <div className="aspect-video relative overflow-hidden">
-                <Image
+                <img
                   src={`/images/portfolio-${i + 1}.jpg`}
                   alt={project.title}
-                  fill
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  loading="lazy"
                 />
               </div>
               <div className="p-5">
